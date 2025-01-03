@@ -18,7 +18,7 @@ const { getAllContactsController, editContactController } = require("./controlle
 require("dotenv").config();
 
 const options = {
-  "access-control-allow-origin": "http://localhost:3000",
+  "access-control-allow-origin": `${process.env.ALLOW_ORIGIN}`,
   "access-control-allow-methods": "GET,POST,DELETE,PUT",
   "access-control-allow-headers": "*",
 };
